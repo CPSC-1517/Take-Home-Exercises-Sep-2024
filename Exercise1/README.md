@@ -117,7 +117,7 @@ A unit testing project called `BooksUnitTestsEx1` has been supplied for this exe
 > - Comment out the  portion of code
 > - Identify the reason for the commented portion (such *as does not compile* or *does not work cause an abort*)
 
-Your assignment will be marked based upon the following weights. See the [general rubric](../../README.md) for details.
+Your assignment will be marked based upon the following weights. See the [general rubric](../README.md) for details.
 
 | Earned | Weight | Deliverable/Requirement | Comments |
 | ---- | ----- | --------- | ------- |
