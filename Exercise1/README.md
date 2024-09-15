@@ -1,26 +1,26 @@
 # OOP Training
 
-> This is the first of a set of exercises that follow the evolution of a program to manage Books in a projects. This set is cumulative and will build upon previous exercises.
+> This is the first of a set of exercises that follow the evolution of a program to manage Books. This set is cumulative and will build upon previous exercises.
 
 ## Overview
 
-Your task is to generate a set of simple data types to represent the primary objects for managing Books in a  projects.
+Your task is to generate a set of simple data types to represent the primary objects for managing Books.
 
-For this exercise, place all the required property data types in the namespace `BookSystem` and ensure that they are `public`. Create your project as a **class library** (.NET Core 8). You have been supplied a Unit Tests project that will inform you if your work will meet specifications. **Ensure you follow the given class diagrams for the Unit Tests to work.**
+For this exercise, place all the required data types in the namespace `BookSystem` and ensure that they are `public`. Create your project as a **class library** (.NET Core 8). You have been supplied a Unit Tests project that will inform you if your work will meet specifications. **Ensure you follow the given class diagrams for the Unit Tests to work.**
 
 ### General Validation Rules
 
 All validation is to be performed by throwing exceptions. Here are some general requirements.
 
-- Exceptions must have meaningful error messages with keywords (ex: positive, minimum).
 - Use `ArgumentException()` for parameter value errors.
+- Exceptions must have meaningful error messages with keywords (ex: positive, minimum).
 - Error messages must include details about the limits for acceptable values.
 - All string information must contain text unless explicitly stated as optional. Null, empty, and plain white-space text is not allowed. Sanitize your strings by trimming the leading and trailing whitespace.
 
 
 ### Unit Testing Code 
 
-Unit testing code has been provided for you and can be located in the zip file in this folder. The zip file is called: `BooksUnitTestEx1.zip`. Download the file; unzip the file; move the `BooksUnitTestEx1` folder to your solution; add the unit test project reference to your solution. Depending on any additional instructions from your instructor, you may need to update the project reference dependency and using statements.
+Unit testing code has been provided for you and can be located in the zip file in this specifications folder. The zip file is called: `BooksUnitTestEx1.zip`. Download the file; unzip the file; move the `BooksUnitTestEx1` folder to your solution; add the unit test project to your solution. Depending on any additional instructions from your instructor, you may need to update the project reference dependency and using statements.
 
 ### The `Author`
 
@@ -43,6 +43,16 @@ Regular expressions are a way of matching a string to an acceptable pattern. Reg
 characters and combination identifiers with special meanings.  There are various coding ways to use a regex in your program. ***This is `not` a course on creating regex expressions.*** The following code is an example.
 
 ```csharp
+
+    //Simple Regular Expression for url: "(https?://www)?[a-zA-Z0-9]+\.\w{2,}(?!\.)"
+    // Meaning:
+    // (...)? means optional, the ? after s meaning the s is optional
+    // [...] one of the indicated characters,  
+    // `+` at least one of
+    // \ is an escape character use when the following character is not to be interpeted as a wild card character
+    // \w{2,} two or more word characters
+    // (?!x) negative lookahead for the character indicated by x
+
     string pattern = @"your pattern";
     Regex regex = new Regex(pattern);
 
@@ -52,24 +62,18 @@ characters and combination identifiers with special meanings.  There are various
     {
        ...
     }
-```
-- Simple Regular Expression for url: "(https?://www)?[a-zA-Z0-9}]+\.\w{2,}(?!\.)"
-- Meaning:
-  - (...)? means optional, the ? after s meaning the s is optional
-  - [...] one of the indicated characters,  
-  - `+` at least one of
-  - \ is an escape character use when the following character is not to be interpeted as a wild card character
-  - \w{2,} two or more word characters
-  - (?!x) negative lookahead for the character indicated by x
 
-### The `Reveiwer`
+```
+
+
+### The `Reviewer`
 
 Reviewer contains the characteristics for a reviewer. The following is class information:
 
 - **FirstName** (e.g.: "Bork") - Identifies the review's first name.
 - **Lastname** (e.g: "Wormm") - Identifies the review's last name.
 - **Email** (e.g. "BorkWormm@treepress.ca") - Identifies the email address of the reviewer.
-- **Organization** (e.g. TreePress publications) - Organization of the reviewer, optional. Reviewer can be independent.
+- **Organization** (e.g. TreePress publications) - Organization of the reviewer **(optional)**. Reviewer can be independent.
 
  You will need a greedy constructor for this class. Property getters and setters are public. All data validation is to be placed within the properties. Some properties only have a getter, because they develop their values based on the state of the Reviewer. **Read-Only properties are not to store data.** Create an overloaded `.ToString()` method for the class to display all the instance values in a comma separated value string, data values only (value order must match constructor parameter list).
 
@@ -113,14 +117,14 @@ A unit testing project called `BooksUnitTestsEx1` has been supplied for this exe
 > - Comment out the  portion of code
 > - Identify the reason for the commented portion (such *as does not compile* or *does not work cause an abort*)
 
-Your assignment will be marked based upon the following weights. See the [general rubric](../../README.md#generalized-marking-rubric) for details.
+Your assignment will be marked based upon the following weights. See the [general rubric](../../README.md) for details.
 
 | Earned | Weight | Deliverable/Requirement | Comments |
 | ---- | ----- | --------- | ------- |
 |  | 5 | Author |   |
 |  | 5 | Reviewer |   |
 |  | 5 | Review |   |
-|  | -5 | Other concerns and penalties (Examples but not limited to: commits do not reflect reflect incremental development; unstructure code; unit tests not used; other instuctor requirements; class standards; ...) max -5 |   |
+|  | -5 | Other concerns and penalties (Examples but not limited to: commits do not reflect incremental development; unstructure code; unit tests not used; class standards; other instuctor requirements;  ...) max -5 |   |
 | ---- | ----- | --------- | ------- |
 |  | **15** | **Total ** |    |
 
