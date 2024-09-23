@@ -1,10 +1,10 @@
 # OOP Training
 
-> This is the first of a set of exercises that follow the evolution of a program to manage Books in a projects. This set is cumulative and will build upon previous exercises.
+> This is the next of a set of exercises that follow the evolution of a program to manage Books. This set is cumulative and will build upon previous exercises.
 
 ## Overview
 
-Your task is to generate a set of simple data types to represent the primary objects for managing Books in a  projects.
+Your task is to generate a set of simple data types to represent the primary objects for managing Books.
 
 For this exercise, place all the required property data types in the namespace `BookSystem` and ensure that they are `public`. Use your **class library** (.NET Core 8) from Exercse 1. You will be required create a xUnit Tests project that will contain unit tests to inform you if your work will meet specifications. **Ensure you follow the given class diagrams for the Unit Tests to work.**
 
@@ -27,14 +27,14 @@ Clasification recommendation for the book.
 
 ### The `Book` **Coding required**
 
-A Book is related to a single author. A Book is assigned a unique industry ISBN. The Genre is from a enum list. A Book may have many reviews. An author may send books to individuals for review before the book is actual published to assist in promotion. A reviewer can only give one review for the book. The Room will track:
+A Book is related to a single author. A Book is assigned a unique industry ISBN. The Genre is from a enum list. A Book may have many reviews. An author may send books to individuals for review before the book is actual published to assist in promotion. A reviewer can only give one review for the book. The Book will track:
 
 - **ISBN** - This identifies the Book. Cannot not be null.
 - **Title** - This is the title of the Book. Cannot not be null.
 - **PublishYear** - This is the year the Book was published. Required format yyyy.
 - **Author** - This is the author of the Book. Required.
 - **Genre** - This is the Genre type category the Book to which the book has been assigned. (auto-implement)
-- **Reviews** - This is a list of all reviews for the Book. This list can be empty as the book is published or may have reviews from individuals given access to a pre-published copy of the book. A reviewer may only have one review per book. (auto-implement)
+- **Reviews** - This is a list of all reviews for the Book. This list can be empty as the book is published or may have reviews from individuals given access to a pre-published copy of the book. A reviewer may only have one review per book. (auto-implement property)
 - **TotalReviews** - Returns the number of reviews for this book in the List&lt;Review&gt; collection.
 
 ![Book](./Book-ClassDiagram.png)
@@ -43,7 +43,7 @@ A Book is related to a single author. A Book is assigned a unique industry ISBN.
 
 ## Create Unit testing methods
 
- Create a unit testing project (.Net Core 8.0) called `BooksUnitTestsEx2` for this exercise. Add it to your solution. Create a class called `Book_Should` to hold your unit test code. Add a reference to your BookSystem project to this project. The following table indicates the unit test cases to create. Unit Test names are left up to you. The required tests are outlined in the following table. You are to use NuGet FluentAssertions package within the xUnit testing project. **Group your unit tests within regions by Class item.**
+ Create a unit testing project (.Net Core 8.0) called `BooksUnitTestsEx2` for this exercise. Add it to your solution. Create a class called `Book_Should` to hold your unit test code. Add a reference of your BookSystem project to this project. The following table indicates the unit test cases to create. Unit Test names are left up to you. The required tests are outlined in the following table. You are to use NuGet FluentAssertions package within the xUnit testing project. **Group your unit tests within regions by Class item.**
 
 #### Unit Tests
 
@@ -73,7 +73,7 @@ A Book is related to a single author. A Book is assigned a unique industry ISBN.
 > - Comment out the  portion of code
 > - Identify the reason for the commented portion (such *as does not compile* or *does not work cause an abort*)
 
-Your assignment will be marked based upon the following weights. See the [general rubric](../../README.md#generalized-marking-rubric) for details.
+Your assignment will be marked based upon the following weights. See the [general rubric](../README.md) for details.
 
 | Earned | Weight | Deliverable/Requirement | Comments |
 | ---- | ----- | --------- | ------- |
