@@ -38,7 +38,7 @@ A Book is related to a single author. A Book is assigned a unique industry ISBN.
 - **TotalReviews** - Returns the number of reviews for this book in the List&lt;Review&gt; collection.
 
 
-
+![Book](./Book-ClassDiagram.png)
 
 
 ## Create Unit testing methods
