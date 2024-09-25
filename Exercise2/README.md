@@ -37,7 +37,7 @@ A Book is related to a single author. A Book is assigned a unique industry ISBN.
 - **Reviews** - This is a list of all reviews for the Book. This list can be empty as the book is published or may have reviews from individuals given access to a pre-published copy of the book. A reviewer may only have one review per book. (auto-implement property)
 - **TotalReviews** - Returns the number of reviews for this book in the List&lt;Review&gt; collection.
 
-![Book](./Book-ClassDiagram.png)
+
 
 
 
