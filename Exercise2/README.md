@@ -72,16 +72,21 @@ A Book is related to a single author. A Book is assigned a unique industry ISBN.
 > If you are unable to get a portion of the assignment to compile or work, you should:
 > - Comment out the  portion of code
 > - Identify the reason for the commented portion (such *as does not compile* or *does not work cause an abort*)
+>
+> Other concerns (Examples but not linited to:)
+> - commits do not reflect incremental development;
+> - unstructure code;
+> - other instuctor requirements;
+> - class standards;
 
 Your assignment will be marked based upon the following weights. See the [general rubric](../README.md) for details.
 
 | Earned | Weight | Deliverable/Requirement | Comments |
 | ---- | ----- | --------- | ------- |
-|  | 10 | Book |   |
-|  | 10 | xUnit Testing |   |
-|  | -5 | Other concerns and penalities (Examples but not linited to: commits do not reflect incremental development;  unstructure code; other instuctor requirements; class standards; ...) max -5 |   |
+|  | 5 | Book |   |
+|  | 5 | xUnit Testing |   |
 | ---- | ----- | --------- | ------- |
-|  | **20** | **Total ** |    |
+|  | **10** | **Total ** |    |
 
 ----
 [Return to exercises](../README.md)
