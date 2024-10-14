@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="BookSystem.Review">
+    <Position X="6.25" Y="2.25" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAAEBQEAAEAEhAAAAAAAAIAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
