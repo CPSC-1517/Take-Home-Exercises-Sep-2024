@@ -147,7 +147,7 @@ Your assignment will be marked based upon the following weights. See the [genera
 |        |  1     | Home Page |    |
 |        |  1     | "About" page |    |
 |        |  3     | `ReviewReport` component |   |
-|        | 6     | `ReviewCollection` component |   |
+|        | 5     | `ReviewCollection` component |   |
 | ------ | ------ | --------- |  ------ |
 |        | **13** | **Total Weight** | ------ |
 
