@@ -98,7 +98,7 @@ In your `ReviewCollection.razor` component, you are to provide the user the abil
 
 A mockup image of the required component is supplied. Your component does not need to have the same layout **but** must use the same variety of controls as the mockup for the page content. The following buttons should be included in your form.
 
-- **Record** will validate the incoming data and save to the CSV file if correct.
+- **Collect** will validate the incoming data and save to the CSV file if correct.
 - **Clear** will reset the fields to empty input state.
 - **Go to Report** will transfer the user to the review Report page.
 
