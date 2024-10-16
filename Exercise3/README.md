@@ -77,7 +77,7 @@ Modify the home page to include the following.
 
 ### The `/About` Page
 
-In your `About.razor` component include the text `Exercise 3 - May 2024` in an `<h1>` tag. Following that, include this content (each with an appropriate `<h2>` header):
+In your `About.razor` component include the text `Exercise 3 - Sep 2024` in an `<h1>` tag. Following that, include this content (each with an appropriate `<h2>` header):
 
 - **`Author: Your_name`** with your full name replacing the *`Your_name`* portion
 - **`Section: X##`** with the *`X##`* being your section number (e.g.: `E01`)
@@ -86,7 +86,7 @@ In your `About.razor` component include the text `Exercise 3 - May 2024` in an `
 
 ### The `/ReviewReport` Page
 
-In your `ReviewReport.razor` component, you are to display the records of book reviews as read from the CSV file created earlier. Read the content into a collection of `Review` objects and display the collection on the page in a tabular format (refer to the mockup image below). Remember to display an appropriate message if the collection is empty and offer a loading message while the data is being retrieved.
+In your `ReviewReport.razor` component, you are to display the records of book reviews as read from the CSV file created earlier. Read the content into a collection of `Review` objects and display the collection on the page in a tabular format (refer to the mockup image below). Remember to display an appropriate message if the collection is empty.
 
 ![ReviewInfo Page](./ReportGoodData.png)
 
