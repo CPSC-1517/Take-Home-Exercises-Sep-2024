@@ -71,7 +71,7 @@ the complete list of Authors. Remember to register your service class.
 **BookServices**
 
 Create a new service class called `BookServices` in your BLL folder. This class will contain one service method to return 
-the complete list of books for a specified genre ordered bt Title. The method will receive a filtering parameter for a 
+the complete list of books for a specified genre ordered by Title. The method will receive a filtering parameter for a 
 specified genre. Remember to register your service class.
 
 ### Query Page to search Books needed for a specific Genre
